@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background-color: #f1f1f1 !important;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "nav"
+    "imgs"
+    "abt";
+}
+
+#navContent {
+  grid-area: "nav";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 24px;
+  line-height: 1.5;
+  background-color: white!important;
+  
+}
+#nav1 {
+  padding-right: 30vw;
+}
+.imageContent {
+  display: flex;
+  grid-area: imgs;
+  width: 100%;
+}
+#about {
+    grid-area: abt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#about h2{
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 2vh;
+}
+
+#about img {
+    width: 70vw;
+    height: auto
+}
+
+#about p {
+    width: 60vw;
+    font-weight: 400;
+}
+.formForContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 2vh;
+}
+.formForContact > h3 {
+    color: #e91e63 ;
+}
+.formData{
+    width:  50%;
+    height: 5vh;
+}
+.formForContact button {  
+    margin-top: 2vh;
+    background-color: #616161 !important;
+    width: 52%
+}
+
+footer {
+  margin-top: 2vh;
+  margin-bottom: 10vh;
+}
+
+@media(min-width:600px){
+  .imageContent {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:  
+    "a a"
+    "b b"
+    "b b"
+    "b b"
+  }
+  #img1{
+    grid-area: a;
+
+  }
+  #img2{
+    grid-area: b;
+  }
+  #img3{
+    grid-area: c;
+  }
+  #img4{
+    grid-area: d;
+  }
+  #img5{
+    grid-area: e;
+  }
+}
