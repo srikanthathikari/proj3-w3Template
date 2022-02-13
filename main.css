@@ -32,9 +32,10 @@ body {
   display: flex;
   grid-area: imgs;
   width: 100%;
+  height: 100%;
 }
 #about {
-    grid-area: abt;
+  grid-area: abt;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,12 +49,12 @@ body {
 }
 
 #about img {
-    width: 70vw;
+   max-width: 60vw;
     height: auto
 }
 
 #about p {
-    width: 60vw;
+    width: 50vw;
     font-weight: 400;
 }
 .formForContact{
@@ -83,30 +84,34 @@ footer {
 }
 
 @media(min-width:600px){
-  .imageContent {
+  
+  .imageGrid {
+    height: 100%;
+    font-size: 0;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
     grid-template-areas:  
-    "a a"
-    "b b"
-    "b b"
-    "b b"
+    "img1 img4"
+    "img2 img5"
+    "img3 img5"
   }
   #img1{
-    grid-area: a;
-
+    grid-area: img1;
   }
   #img2{
-    grid-area: b;
+    grid-area: img2;
   }
   #img3{
-    grid-area: c;
+    grid-area: img3;
   }
   #img4{
-    grid-area: d;
+    grid-area: img4;
   }
   #img5{
-    grid-area: e;
+    grid-area: img5;
   }
+
+  #about img {
+     max-width: 20%;
+     height: auto
+ }
 }
