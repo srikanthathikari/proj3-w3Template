@@ -1,0 +1,37 @@
+@media (min-width: 600px) {
+    .imageGrid {
+      height: 100%;
+      font-size: 0;
+      display: grid;
+      grid-template-areas:
+        "img1 img4"
+        "img2 img5"
+        "img3 img5";
+    }
+    #img1 {
+      grid-area: img1;
+    }
+    #img2 {
+      grid-area: img2;
+    }
+    #img3 {
+      grid-area: img3;
+    }
+    #img4 {
+      grid-area: img4;
+    }
+    #img5 {
+      grid-area: img5;
+    }
+    footer{
+      grid-area: ft;
+    }
+  }
+  
+  @media (min-width: 1500px) {
+    .imageGrid {
+      background-color: white !important;
+      margin: 5px;
+    }
+  }
+  
