@@ -49,8 +49,8 @@ body {
 }
 
 #about img {
-   max-width: 60vw;
-    height: auto
+   height: 350px;
+   width: 300px;
 }
 
 #about p {
@@ -109,9 +109,4 @@ footer {
   #img5{
     grid-area: img5;
   }
-
-  #about img {
-     max-width: 20%;
-     height: auto
- }
 }
